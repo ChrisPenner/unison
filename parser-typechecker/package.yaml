@@ -2,21 +2,8 @@ name: unison-parser-typechecker
 github: unisonweb/unison
 copyright: Copyright (C) 2013-2021 Unison Computing, PBC and contributors
 
-default-extensions:
-  - ApplicativeDo
-  - BlockArguments
-  - DeriveFunctor
-  - DerivingStrategies
-  - DoAndIfThenElse
-  - FlexibleContexts
-  - FlexibleInstances
-  - LambdaCase
-  - MultiParamTypeClasses
-  - ScopedTypeVariables
-  - TupleSections
-  - TypeApplications
-
-ghc-options: -Wall -O0 -fno-warn-name-shadowing -fno-warn-missing-pattern-synonym-signatures
+defaults:
+  local: ../package-defaults.yaml
 
 flags:
   optimized:

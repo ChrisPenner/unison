@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 655ca1a695b9a272d6b440b74fe2b6717f710a543d7ddb7639366d4233961bf8
+-- hash: 424d58f98d44ffcbaeaf071873e1f93b545a7340a7a66907a225e0b09b8f8a2f
 
 name:           unison-util-term
 version:        0.0.0
@@ -24,6 +24,20 @@ library
       Paths_unison_util_term
   hs-source-dirs:
       ./
+  default-extensions:
+      ApplicativeDo
+      BlockArguments
+      DeriveFunctor
+      DerivingStrategies
+      DoAndIfThenElse
+      FlexibleContexts
+      FlexibleInstances
+      LambdaCase
+      MultiParamTypeClasses
+      ScopedTypeVariables
+      TupleSections
+      TypeApplications
+  ghc-options: -Wall -O0 -fno-warn-name-shadowing -fno-warn-missing-pattern-synonym-signatures
   build-depends:
       base
     , containers

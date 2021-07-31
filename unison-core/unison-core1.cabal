@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 6eae706c8674f4a7f22bb4bff150798cdaba8aa9186b3d94a6a8467a9cc23d06
+-- hash: ff367a607493e784cdb99827f905f6dc1942adf9ca9eb39c30b2a31a1a8d77fc
 
 name:           unison-core1
 version:        0.0.0
@@ -77,7 +77,7 @@ library
       ScopedTypeVariables
       TupleSections
       TypeApplications
-  ghc-options: -Wall -fno-warn-name-shadowing -fno-warn-missing-pattern-synonym-signatures -funbox-strict-fields
+  ghc-options: -Wall -O0 -fno-warn-name-shadowing -fno-warn-missing-pattern-synonym-signatures -Wall -fno-warn-name-shadowing -fno-warn-missing-pattern-synonym-signatures -funbox-strict-fields
   build-depends:
       base
     , bytestring

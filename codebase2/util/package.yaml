@@ -1,6 +1,9 @@
 name: unison-util
 github: unisonweb/unison
 
+defaults:
+  local: ../../package-defaults.yaml
+
 library:
   source-dirs: .
 

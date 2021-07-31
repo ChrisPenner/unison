@@ -2,6 +2,9 @@ name: unison-core1
 github: unisonweb/unison
 copyright: Copyright (C) 2013-2018 Unison Computing, PBC and contributors
 
+defaults:
+  local: ../package-defaults.yaml
+
 library:
   source-dirs: src
   ghc-options: -Wall -fno-warn-name-shadowing -fno-warn-missing-pattern-synonym-signatures -funbox-strict-fields
@@ -24,20 +27,6 @@ library:
     - transformers
     - util
     - vector
-
-default-extensions:
-  - ApplicativeDo
-  - BlockArguments
-  - DeriveFunctor
-  - DerivingStrategies
-  - DoAndIfThenElse
-  - FlexibleContexts
-  - FlexibleInstances
-  - LambdaCase
-  - MultiParamTypeClasses
-  - ScopedTypeVariables
-  - TupleSections
-  - TypeApplications
 
 flags:
   optimized:

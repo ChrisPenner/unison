@@ -1,5 +1,8 @@
 name: unison-util-serialization
 
+defaults:
+  local: ../../package-defaults.yaml
+
 library:
   source-dirs: .
 

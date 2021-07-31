@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 3106bd32bedf162883882818669a81a3e1ca7c60af26ec9cd945fadb39f0d5aa
+-- hash: 3e2b2f9616088c392e91f3f4fe4fbf526fafdc61ef27e2a5f19a840e4370b0ab
 
 name:           unison-codebase-sqlite
 version:        0.0.0
@@ -46,6 +46,20 @@ library
       Paths_unison_codebase_sqlite
   hs-source-dirs:
       ./
+  default-extensions:
+      ApplicativeDo
+      BlockArguments
+      DeriveFunctor
+      DerivingStrategies
+      DoAndIfThenElse
+      FlexibleContexts
+      FlexibleInstances
+      LambdaCase
+      MultiParamTypeClasses
+      ScopedTypeVariables
+      TupleSections
+      TypeApplications
+  ghc-options: -Wall -O0 -fno-warn-name-shadowing -fno-warn-missing-pattern-synonym-signatures
   build-depends:
       base
     , bytes

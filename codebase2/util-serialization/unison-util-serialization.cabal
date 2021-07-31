@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 0dd31d457a6c3bc41017d163374947c1c31752279ce7ce77bc5772150101afe1
+-- hash: 8ece77a29979aba1d62b02233a3c99e6740a8cc05ac9d03f82f19cba195372de
 
 name:           unison-util-serialization
 version:        0.0.0
@@ -17,6 +17,20 @@ library
       Paths_unison_util_serialization
   hs-source-dirs:
       ./
+  default-extensions:
+      ApplicativeDo
+      BlockArguments
+      DeriveFunctor
+      DerivingStrategies
+      DoAndIfThenElse
+      FlexibleContexts
+      FlexibleInstances
+      LambdaCase
+      MultiParamTypeClasses
+      ScopedTypeVariables
+      TupleSections
+      TypeApplications
+  ghc-options: -Wall -O0 -fno-warn-name-shadowing -fno-warn-missing-pattern-synonym-signatures
   build-depends:
       base
     , bytes
